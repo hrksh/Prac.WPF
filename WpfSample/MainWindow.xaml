@@ -5,7 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSample"
         mc:Ignorable="d"
-        Title="" Height="400" Width="400" Background="Transparent" WindowStyle="None">
-    <Border CornerRadius="10" BorderThickness="2" BorderBrush="Aqua" Margin="10" Background="Gray">
+        WindowStyle="None" Title="" Height="500" Width="800" 
+        Background="Transparent" AllowsTransparency="True">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/View/Style/Style.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Border Style="{StaticResource BorderStandard}">
     </Border>
 </Window>
